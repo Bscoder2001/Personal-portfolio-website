@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Home</title>
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+
+
+    <!--Developer Nav CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <!-- === Header Section === -->
+    <header class="shadow-sm" id="header">
+        <div class="containeer mx-auto p-2 px-4">
+            <div class="flex justify-between items-center ">
+                <a href="index.html"
+                    class="text-gray-800 text-xl hover:text-indigo-500 justify-between font-medium inline-flex items-center">
+                    <span><img src="images/logo/logo.png" class="logo" alt="" /></span>
+                    <div class="nl">
+                        <span class="logoName">Subham Biswas</span>
+                        <span class="logoProfession">Web Designer & UI/Web Developer </span>
+                    </div>
+                </a>
+                <!-- Navbar -->
+                <div id="nav" class="hidden md:inline-flex space-x-8 items-center text-gray-600">
+                    <a href="#home" class="homeButton">
+                        <p class="hover:text-indigo-600">Home</p>
+                    </a>
+                    <a href="#about" class="aboutButton">
+                        <p class="hover:text-indigo-600">About</p>
+                    </a>
+                    <a href="#service" class="serviceButton">
+                        <p class="hover:text-indigo-600">Services</p>
+                    </a>
+                    <a href="#portfolio" class="portfolioButton">
+                        <p class="hover:text-indigo-600">Portfolio</p>
+                    </a>
+                    <a href="#" class="contactButton">
+                        <p class="hover:text-indigo-600">Contact</p>
+                    </a>
+                </div>
+                <!-- Hamburger Button -->
+                <div id="menu" class="block md:hidden">
+                    <button class="focus:outline-none focus:outline-none" id="open">
+                        <i class="fas fa-bars text-gray-800 text-xl items-center"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Version -->
+            <div id="mobile" class="hidden">
+                <div class="bg-gray-900 absolute top-0 right-0 w-full h-screen overflow-scroll p-6">
+                    <div class="flex w-full justify-between items-center">
+                        <a href=""
+                            class="text-gray-100 text-xl hover:text-indigo-500 font-medium space-x-3  inline-flex items-center">
+                            <span><img src="/Favicon/favicon-32x32.png" alt="" /></span>
+                            <span>BsCoder</span>
+                        </a>
+
+                        <div>
+                            <button class="float-right focus:outline-none focus:outline-none" id="close">
+                                <i class="fas fa-times text-gray-500 text-2xl items-center"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="mobileNav" class="pt-6 pb-6">
+                        <div>
+                            <a href="#home"
+                                class="text-gray-300 text-lg py-4 hover:text-indigo-500 flex justify-between items-center homeButton">
+                                <div class="inline-flex space-x-4 items-center">
+                                    <span><i class="fa-solid fa-house"></i></span>
+                                    <span class="float-left">Home</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#about"
+                                class="text-gray-300 text-lg py-4 hover:text-indigo-500 flex justify-between items-center aboutButton">
+                                <div class="inline-flex space-x-4 items-center">
+                                    <span><i class="fa-solid fa-folder"></i></span>
+                                    <span class="float-left">About</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#services"
+                                class="text-gray-300 text-lg py-4 hover:text-indigo-500 flex justify-between items-center serviceButton">
+                                <div class="inline-flex space-x-4 items-center">
+                                    <span><i class="fa-solid fa-bell-concierge"></i></span>
+                                    <span class="float-left">Services</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#portfolio"
+                                class="text-gray-300 text-lg py-4 hover:text-indigo-500 flex justify-between items-center portfolioButton">
+                                <div class="inline-flex space-x-4 items-center">
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                    <span class="float-left">Portfolio</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#contact"
+                                class="text-gray-300 text-lg py-4 hover:text-indigo-500 flex justify-between items-center contactButton">
+                                <div class="inline-flex space-x-4 items-center">
+                                    <span><i class="fa-solid fa-phone"></i></span>
+                                    <span class="float-left">Contact</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- === Header Section End === -->
+
+    <!-- === Main Section === -->
+    <main>
+        <!-- === Home Section === -->
+        <section class="firstSection" id="homeSection">
+            <div class="leftSection">
+                <div>
+                    Hi, My name is <span class="text-purple">Subham</span>
+                    <div class="passionate">and I am a passionate</div>
+                    <span id="element" class="text-purple"></span>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg-img/programmer.png" alt="">
+            </div>
+        </section>
+        <!-- === Home Section End === -->
+
+        <!-- === About Section === -->
+        <section class="secondSection" id="aboutSection">
+            <span class="text-gray h-span">Passionate Web Developer Creating Engaging Online Experiences <span
+                    class="h-border">________</span>
+            </span>
+            <h1 id="about-me">ABOUT ME</h1>
+
+            <div class="aboutSection">
+                <div class="aboutImgDiv">
+                    <img src="images/bg-img/bg-2.jpeg" alt="" id="about__img">
+                </div>
+
+                <div class="about__details">
+                    <h1>Web Designer & UI/Web Developer</h1>
+                    <div class="about-items">
+                        <ul>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>Birthday:</strong> <span>29th
+                                    May 2001</span></li>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>Website:</strong>
+                                <span>github.com/BsCoder2001</span>
+                            </li>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>Phone:</strong> <span>+91
+                                    9051521161</span></li>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>City:</strong> <span>Kolkata,
+                                    India</span></li>
+                        </ul>
+                        <ul>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>Age:</strong> <span>22</span></li>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>Degree:</strong>
+                                <span>Bachelor of Commerce</span>
+                            </li>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>Passion:</strong>
+                                <span>Singing</span>
+                            </li>
+                            <li><i class="fa-regular fa-hand-point-right"></i><strong>Email ID:</strong>
+                                <span>bsubham408@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="row skills-content">
+                <h1>Skills</h1>
+
+                <div class="col-div">
+                    <div class="progress">
+                        <span class="skill">
+                            <strong>HTML</strong>
+                            <p>80%</p>
+                        </span>
+                        <div class="progress-bar-wrap">
+                            <progress id="file" class="progressBar" value="80" max="100">
+                            </progress>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill"><strong>CSS</strong> <i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <progress id="file" class="progressBar" value="70" max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill"><strong>JavaScript</strong> <i class="val">40%</i></span>
+                        <div class="progress-bar-wrap">
+                            <progress id="file" class="progressBar" value="40" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-div">
+                    <div class="progress">
+                        <span class="skill"><strong>Reactjs</strong><i class="val">40%</i></span>
+                        <div class="progress-bar-wrap">
+                            <progress id="file" class="progressBar" value="40" max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill"><strong>Bootstrap</strong><i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <progress id="file" class="progressBar" value="60" max="100"></progress>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill"><strong>JQuery</strong><i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <progress id="file" class="progressBar" value="60" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-gallery">
+                <div>
+                    <h1>Some of my Projects</h1>
+                </div>
+                <div class="img-gallery">
+                    <div class="gallery">
+                        <span style="--i: 1"><img src="images/img-gallery/img-1.png" alt=""></span>
+                        <span style="--i: 2"><img src="images/img-gallery/img-2.png" alt=""></span>
+                        <span style="--i: 3"><img src="images/img-gallery/img-3.png" alt=""></span>
+                        <span style="--i: 4"><img src="images/img-gallery/img-4.png" alt=""></span>
+                        <span style="--i: 5"><img src="images/img-gallery/img-5.png" alt=""></span>
+                        <span style="--i: 6"><img src="images/img-gallery/img-6.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- === About Section End === -->
+
+        <!-- === Service Section === -->
+        <section class="thirdSection" id="serviceSection">
+            <div class="serviceItemContainer">
+                <div class="serviceItems">
+                    <div>
+                        <strong><i class="fa-solid fa-code fa-2xl"></i></strong>
+                        UI/Web Development
+                    </div>
+                    <div>
+                        <strong><i class="fa-sharp fa-solid fa-window-maximize fa-2xl"></i></strong>
+                        Web Design
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === Service Section End === -->
+
+        <!--===== Portfolio Section ====== -->
+        <section class="fourthSection" id="portfolioSection">
+            <div class="portfolio">
+                <div class="portfolio__header">
+                    <div><img src="images/logo/logo.png" alt=""></div>
+                    <div class="portfolio__header-text">MY PORTFOLIO</div>
+                </div>
+                <div class="portfolio__h-img">
+
+                </div>
+                <div class="portfolio__row">
+                    <div class="portfolio__col">
+                        <h1>Summary</h1>
+                        <strong>
+                            <ul>
+                                <li>Subham Biswas</li>
+                            </ul>
+                        </strong>
+                        <p>
+                            Passionate Web Developer with one year of expertise in UI and Web Development. Skilled in
+                            crafting visually appealing and user-friendly websites. Additionally, a singer and
+                            guitarist, blending technical proficiency with musical creativity. Passionate about
+                            delivering seamless digital experiences and captivating audiences through both code and
+                            music.
+                        </p>
+                        <div class="portfolio__info">
+                            <ul>
+                                <li>Kolkata, India</li>
+                                <li>+91 90515 21161</li>
+                                <li>bsubham408@gmail.com</li>
+                            </ul>
+                        </div>
+                        <h1>Education</h1>
+                        <div class="portfolio__info">
+                            <ul>
+                                <li><span>Secondary: </span> CCHV School, Kolkata(2016-2017)</li>
+                                <li><span>High-Secondary: </span> CCHV School, Kolkata(2018-2019)</li>
+                                <li><span>Bachelor of Commerce(Accounts Honours): </span> Acharya Girish Chandra Bose
+                                    College, Kolkata</li>
+                            </ul>
+                        </div>
+                        <h1>Projects</h1>
+                        <div class="portfolio__info">
+                            <ul>
+                                <li><span> Projects Name: </span> Portfolio Website </li>
+                                <p>
+                                    ~ Designed and developed a personal portfolio website to
+                                    showcase my skills, projects, and achievements. Implemented smooth
+                                    animations, responsive design, and optimized performance. <br>
+                                    <b>Technologies used:</b> HTML5, CSS3, JavaScript, JQuery
+                                </p>
+                                <li><span> Projects Name: </span> Music Player Application </li>
+                                <p>
+                                    ~ Created a music player application using JavaScript.
+                                    Implemented features like playlist management, audio controls, and custom
+                                    styling options. <br>
+                                    <b>Technologies used:</b> HTML5, CSS3, JavaScript
+                                </p>
+                                <li><span> Projects Name: </span> Food delivery website </li>
+                                <p>
+                                    ~ Created a Food Delivery Website to showcase my skills in
+                                    Development. <br>
+                                    <b>Technologies used:</b> HTML5, CSS3
+                                </p>
+                                <li> Click here to download my <span> <a target="_main" href="my resume.pdf" style=" font-weight: 700; font-size: 1.1rem;
+                                ">resume</a></span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===== Portfolio Section End =====-->
+
+        <!--===== Contact Section =====-->
+        <section class="fifthSection" id="contactSection">
+            <div class="contactContainer">
+                <span class="text-gray h-span">Connect with me for collaboration and inquiries<span class="h-border"> ________</span></span>
+                <h1>CONTACT ME</h1>
+                <div class="myContact">
+                    <div class="contact-row">
+                        <div class="contact-col">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="contactinfo">
+                                <h3>Address</h3>
+                                <p>Jyangra Rabindrapally, Kolkata, West Bengal, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-col">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="contactinfo">
+                                <h3>Email</h3>
+                                <p>bsubham408@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-col">
+                            <i class="fa-solid fa-link"></i>
+                            <div class="contactinfo">
+                                <h3>Social</h3>
+                                <p><a href="https://www.linkedin.com/in/subham-biswas-0115a6249/" target="_main" class="links"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://github.com/Bscoder2001" target="_main" class="links"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.facebook.com/subham.biswas.3572" target="_main" class="links"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/_subho2001_/" target="_main" class="links"><i class="fa-brands fa-instagram"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-col">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="contactinfo">
+                                <h3>Call me</h3>
+                                <p>+91 90515 21161</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--===== Main Section End ====== -->
+
+    <!--===== Footer Section ====== -->
+    <footer>
+        <span>Powered by <strong>Subham</strong></span>
+    </footer>
+    <!--===== Footer Section End ====== -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#close').click(function () {
+                $('#mobile').fadeOut('fast', function () { });
+            });
+            $('#open').click(function () {
+                $('#mobile').fadeIn('fast', function () { });
+            });
+
+        });
+        var typed = new Typed('#element', {
+            strings: ['Web Developer,', 'Web Designer,', 'Guitarist,', 'Singer'],
+            typeSpeed: 50,
+        });
+
+    </script>
+</body>
+<!-- JavaScript -->
+<script src="Js/index.js"></script>
+
+<!-- FontAwesome Script -->
+<script src="https://kit.fontawesome.com/0a355cdffb.js" crossorigin="anonymous"></script>
+
+</html>

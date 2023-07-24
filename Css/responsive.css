@@ -1,0 +1,288 @@
+ /* Mobile Responsive */
+ @media only screen and (max-width: 500px) and (min-width: 360px) {
+     .nl {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         justify-content: left;
+         margin-left: 8px;
+         text-align: center;
+     }
+
+     .leftSection {
+         justify-content: center;
+         font-size: 2rem;
+         color: white;
+     }
+
+     .firstSection>div {
+         width: 100%;
+         text-align: center;
+     }
+
+     .px-4 {
+         padding-right: 0;
+         padding-left: 0;
+         padding: 12px;
+     }
+
+     .rightSection img {
+         height: 20.8rem;
+         margin: 15px 0;
+     }
+
+     .passionate {
+         text-align: center;
+     }
+
+     .secondSection {
+         height: 1800px;
+     }
+
+     .secondSection::before {
+         height: 1300px;
+     }
+
+     .secondSection h1 {
+         padding: 0px 19px;
+     }
+
+     .aboutSection {
+         width: 100%;
+         margin: 4px 37px;
+     }
+
+     .about__details {
+         margin-top: 30px;
+     }
+
+     .about-items {
+         display: block;
+         font-size: 1.3rem;
+         margin-left: 25px;
+         text-align: center;
+     }
+
+     #about__img {
+         width: 20.5rem;
+     }
+
+     .about-items ul {
+         margin: 0px;
+     }
+
+     .skills-content {
+         margin: 30px 25px;
+         display: block;
+         width: 90%;
+     }
+
+     .img-gallery {
+         width: 40%;
+         margin: 8px 127px;
+     }
+
+     .gallery span {
+         transform: rotateY(calc(var(--i) * 60deg)) translateZ(11rem);
+     }
+
+     .portfolio__col h1 {
+         text-align: center;
+         margin-left: 0px;
+     }
+
+     .portfolio__row {
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     .portfolio__col p {
+         width: 100%;
+         text-align: center;
+         position: relative;
+         z-index: 5;
+         padding: 5px 10px;
+     }
+
+     .portfolio__col img {
+         display: none;
+     }
+
+     .portfolio__col strong ul li {
+         text-align: center;
+     }
+
+     .portfolio__info {
+         padding: 5px 15px;
+     }
+
+     .portfolio__h-img {
+         height: 13em;
+     }
+
+     .portfolio__info ul li {
+         list-style: none;
+         text-align: center;
+     }
+     .contact-row {
+        width: 100%;
+     }
+     .myContact {
+        flex-direction: column;
+     }
+ }
+
+ @media only screen and (max-width: 768px) and (min-width: 501px) {
+     .containeer {
+         max-width: 1000px;
+     }
+
+     .logoProfession {
+         font-size: 0.9rem;
+     }
+
+     .leftSection {
+         justify-content: center;
+         font-size: 2rem;
+         color: white;
+     }
+
+     .firstSection>div {
+         width: 100%;
+     }
+
+     #element {
+         margin: auto;
+         display: inline-block;
+         width: 95%;
+         text-align: center;
+     }
+
+     .px-4 {
+         padding-right: 0;
+         padding-left: 0;
+         padding: 12px 22px;
+     }
+
+     .rightSection img {
+         height: 20.8rem;
+         width: 25rem;
+         margin: 15px 0;
+     }
+
+     .passionate {
+         text-align: center;
+     }
+
+     .secondSection {
+         margin-top: 10px;
+     }
+
+     .secondSection::before {
+         height: 1190px;
+     }
+
+     #about-me {
+         margin-top: 60px;
+     }
+
+     .about__details h1 {
+         font-size: 2rem;
+     }
+
+     .about-items ul {
+         font-size: 1.3rem;
+     }
+
+     .img-gallery {
+         width: 19%;
+         height: 77vw;
+     }
+
+     .gallery {
+         width: 245px;
+     }
+
+     .gallery span {
+         transform: rotateY(calc(var(--i) * 60deg)) translateZ(8rem);
+     }
+
+     .thirdSection {
+         margin-top: 10px;
+     }
+
+ }
+
+ @media only screen and (max-width: 820px) and (min-width: 769px) {
+     .firstSection {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 90vh;
+         flex-wrap: wrap;
+     }
+
+     .serviceItems div {
+         height: 18rem;
+         width: 18rem;
+     }
+ }
+
+
+ @media only screen and (max-width: 912px) {
+     .leftSection {
+         font-size: 2rem;
+     }
+
+     .p-3 {
+         padding: 0;
+     }
+ }
+
+ @media only screen and (max-width: 414px) {
+     .logo {
+         margin-right: 14px;
+     }
+ }
+
+ @media only screen and (max-width: 280px) {
+     .leftSection {
+         font-size: 1.5rem;
+     }
+
+     .logo {
+         margin-right: 0px;
+         margin-left: 37px;
+     }
+
+     .logoName {
+         font-size: 25px;
+         margin-left: 26px;
+
+     }
+
+     .logoProfession {
+         font-size: 0.9rem;
+         margin-right: -18px;
+     }
+
+     .fa-bars:before,
+     .fa-navicon:before {
+         position: relative;
+         top: 86px;
+         right: 120px;
+     }
+
+     .text-gray-800 {
+         flex-direction: column;
+     }
+
+     .shadow-sm {
+         height: 190px;
+     }
+
+     .rightSection img {
+         height: 17.8rem;
+     }
+ }
