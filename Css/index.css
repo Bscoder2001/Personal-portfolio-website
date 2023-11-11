@@ -655,3 +655,27 @@
  .h-border {
      color: rgb(187, 199, 255);
  }
+
+#whatsapp-logo {
+    position: fixed;
+    bottom: 30px;
+    right: 33px;
+    font-size: 58px;
+    border-radius: 50%;
+    z-index: 10;
+    animation: mymove 2s linear infinite ;
+}
+
+@keyframes mymove {
+    10% {
+        box-shadow: 0 0 0 50px rgb(255 109 74 / 0), 0 0 0 0 rgba(65, 216, 148, 0.7);
+    }
+    
+    80% {
+        box-shadow: 0 0 0 50px #ff6d4a00, 0 0 0 30px #ff6d4a00;
+    }
+    100% {
+        box-shadow: 0 0 0 0 #ff6d4a00, 0 0 0 30px #ff6d4a00;
+    }
+  }
+

@@ -38,10 +38,23 @@ $(".contactButton").click(function () {
   $('.homeButton, .aboutButton, .serviceButton, .portfolioButton').removeClass('active')
 });
 
+// Whatsapp Logo
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function getWhatsAppLink() {
+    let phoneNumber = "9051521161";
+    if (isMobile()) {
+        return "https://wa.me/" + phoneNumber;
+    } else {
+        return "https://web.whatsapp.com/send?phone=" + phoneNumber;
+    }
+}
 
 // Javascript to hide the navbar after sometime to enjoy full display experiance 
-
 // Uncomment it to enjoy that functionality ---
+
 // let navbar = document.getElementById("header");
 // let isNavbarVisible = true;
 // let timeoutId;
